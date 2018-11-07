@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_shopping_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/recycler_background">
+
+    <TextView
+        android:id="@+id/list_shopping_item_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:text="Shopping Item Name"
+        />
+    
+    <ImageView
+        android:id="@+id/list_shopping_item_itemView"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_background"
+        android:src="@mipmap/ic_trash"/>
+    
+    <TextView
+        android:id="@+id/list_shopping_item_boughtBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/list_shopping_item_itemView"
+        android:layout_marginTop="5dp"
+        tools:text="Bought By"/>
+
+
+
+
+</RelativeLayout>
